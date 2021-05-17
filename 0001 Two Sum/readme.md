@@ -1,32 +1,38 @@
-# Two Sum
+# 1. Two Sum
 
-## Description
+Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.
 
-Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+You may assume that each input would have _**exactly**_ **one solution**, and you may not use the same element twice.
 
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order.
 
-Example:
-
-* Given nums = [2, 7, 11, 15], target = 9, because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1]:
+**Example 1:**
 
 ```python
-two_sum([2, 7, 11, 15], 9) # should return: [0, 1]
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Output: Because nums[0] + nums[1] == 9, we return [0, 1].
 ```
 
-## Note
-
-As the solution has been provided, we may launch it from the terminal as follows:
+**Example 2:**
 
 ```python
-$ python two_sum.py "[2, 7, 11, 13, 11]" 22
-[2, 4]
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
 ```
 
-Tests are prepared to be executed with `pytest` just by doing:
+**Example 3:**
 
 ```python
-$ pytest -v
+Input: nums = [3,3], target = 6
+Output: [0,1]
 ```
 
-in this same directory.
+**Constraints:**
+
+* `2 <= nums.length <= 104`
+* `-109 <= nums[i] <= 109`
+* `-109 <= target <= 109`
+* **Only one valid answer exists.**
+
+**Follow-up:** Can you come up with an algorithm that is less than `O(n`<sup>`2`</sup>`)` time complexity?
